@@ -1,0 +1,60 @@
+.header
+	margin-bottom: 70px
+
+	&-logo
+		max-width: 175px
+		text-decoration: none
+		&__img
+			display: block
+			width: 100%
+			height: auto
+
+	&-language
+		margin: 0 0 25px
+		padding: 0
+		display: flex
+		list-style: none
+		&__li
+			margin-left: 20px
+
+		&__link
+			display: block
+			padding: 0 6px
+			box-sizing: border-box
+			text-align: center
+			font-size: 24px
+			line-height: 40px
+			letter-spacing: 1px
+			color: $font-light
+			transition: .25s
+			&:hover
+				color: $font-light
+				text-decoration: none
+				background-color: $accent
+			&_active
+				background-color: $accent
+
+	&-nav-list
+		display: flex
+		margin: 0
+		padding: 0
+		list-style: none
+		&__li
+			margin-left: 50px
+			&_active
+				.header-nav-list__link
+					text-decoration: none
+					color: $accent
+		&__link
+			display: block
+			padding: 5px 0
+			box-sizing: border-box
+			font-size: 25px
+			line-height: 29px
+			color: $font-light
+			text-transform: uppercase
+			text-decoration: none
+			transition: .25s
+			&:hover
+				text-decoration: none
+				color: $accent
