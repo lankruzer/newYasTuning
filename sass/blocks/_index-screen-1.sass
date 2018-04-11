@@ -6,6 +6,21 @@
 	background: #182126 url('../img/screen-1-bg.jpg') center no-repeat
 	background-size: cover
 
+	.container
+		position: relative
+		&::after
+			content: 'FOR PROFESSIONALS'
+			position: absolute
+			top: 50%
+			right: 0
+			font-size: 30px
+			line-height: 30px
+			letter-spacing: 1px
+			color: $font-light
+			transform-origin: right
+			transform: rotate(-90deg) translate(25%, -100%)
+			opacity: .6
+
 	&-h1
 		margin: 0 0 55px
 		font-size: 62px
@@ -36,6 +51,14 @@
 +media-breakpoint-down(xxl)
 	.index-screen-1
 		padding: 120px 0 50px
+		box
+
+
+		.container
+			&::after
+				font-size: 26px
+				line-height: 26px
+				opacity: .8
 
 		&-h1
 			font-size: 50px
@@ -47,6 +70,13 @@
 +media-breakpoint-down(xl)
 	.index-screen-1
 		padding: 70px 0 50px
+
+		.container
+			&::after
+				font-size: 20px
+				line-height: 20px
+				opacity: .8
+
 
 		&-h1
 			margin-bottom: 45px
@@ -63,6 +93,13 @@
 	.index-screen-1
 		padding: 60px 0 40px
 
+		.container
+			&::after
+				font-size: 18px
+				line-height: 18px
+				opacity: .6
+
+
 		&-h1
 			margin-bottom: 35px
 			font-size: 40px
@@ -77,6 +114,10 @@
 +media-breakpoint-down(md)
 	.index-screen-1
 		padding: 50px 0 30px
+
+		.container
+			&::after
+				display: none
 
 		&-h1
 			margin-bottom: 25px
