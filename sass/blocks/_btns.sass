@@ -35,12 +35,27 @@
 		padding-left: 10px
 		padding-right: 10px
 
+	&.btn_no-upper
+		text-transform: none
+
+	&.btn_dark
+		font-size: 25px
+		letter-spacing: 1px
+		color: $light-gray
+		background-color: $dark
+		&:hover
+			color: #fff
+			background-color: $accent
+
 +media-breakpoint-down(xl)
 	.btn
 		min-width: 240px
 		min-height: 50px
 		font-size: 20px
 		line-height: 46px
+		&.btn_dark
+			font-size: 20px
+			line-height: 46px
 
 +media-breakpoint-down(md)
 	.btn
@@ -48,3 +63,6 @@
 		min-height: 44px
 		font-size: 18px
 		line-height: 40px
+		&.btn_dark
+			font-size: 18px
+			line-height: 40px

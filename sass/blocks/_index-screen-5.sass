@@ -1,0 +1,103 @@
+.index-screen-5
+	background-color: #121e28
+
+.index-article
+	margin-bottom: 65px
+	color: $dark
+
+	&__content
+		background-color: $light
+	&__img
+		display: block
+		width: 100%
+		text-decoration: none
+		img
+			display: block
+			width: 100%
+			height: auto
+			object-fit: cover
+
+	&__info
+		padding: 25px 25px 20px
+		box-sizing: border-box
+
+	&__title
+		margin: 0 0 15px
+
+	&__title-link
+		display: block
+		font-size: 34px
+		line-height: 38px
+		font-weight: 400
+		color: $font-dark
+		letter-spacing: 1.36px
+		text-decoration: none
+		transition: .25s
+		&:hover
+			color: $accent
+
+	&__time
+		display: inline-block
+		margin-bottom: 10px
+		font-size: 25px
+		letter-spacing: 1px
+
+	&__text
+		margin: 0 0 20px
+		font-size: 25px
+		letter-spacing: 1px
+
++media-breakpoint-down(xl)
+	.index-article
+		margin-bottom: 55px
+		&__title-link
+			font-size: 32px
+			line-height: 36px
+		&__time
+			font-size: 22px
+		&__text
+			font-size: 22px
+
++media-breakpoint-down(md)
+	.index-article
+		margin-bottom: 45px
+		&__title
+			margin-bottom: 5px
+			&-link
+				font-size: 28px
+				line-height: 34px
+		&__time
+			font-size: 20px
+		&__text
+			font-size: 20px
+
++media-breakpoint-down(xs)
+	.index-article
+		margin-bottom: 35px
+		&__info
+			padding: 20px 10px
+		&__title
+			margin-bottom: 0
+			&-link
+				font-size: 22px
+				line-height: 26px
+		&__time
+			margin-bottom: 5px
+			font-size: 18px
+		&__text
+			font-size: 18px
+
++media-breakpoint-down(xs)
+	.index-article
+		margin-bottom: 30px
+		&__info
+			padding: 15px 10px
+		&__title
+			&-link
+				font-size: 20px
+				line-height: 24px
+		&__time
+			margin-bottom: 5px
+			font-size: 16px
+		&__text
+			font-size: 16px
