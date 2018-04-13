@@ -1,6 +1,14 @@
 .screen
 	padding: 70px 0 60px
+	box-sizing: border-box
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
-	box-sizing: border-box
+
+	&_dark
+		color: $font-light
+		background-color: $dark-blue
+
++media-breakpoint-down(xs)
+	.screen
+		padding: 50px 0 40px
