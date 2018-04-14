@@ -56,22 +56,22 @@
 							<nav class="header-nav">
 								<ul class="header-nav-list">
 									<li class="header-nav-list__li">
-										<a href="#" class="header-nav-list__link">О компании</a>
+										<a href="#about" class="header-nav-list__link">О компании</a>
 									</li>
 									<li class="header-nav-list__li">
-										<a href="#" class="header-nav-list__link">Последние файлы</a>
+										<a href="#last-files" class="header-nav-list__link">Последние файлы</a>
 									</li>
 									<li class="header-nav-list__li">
-										<a href="#" class="header-nav-list__link">Блог</a>
+										<a href="#blog" class="header-nav-list__link">Блог</a>
 									</li>
 									<li class="header-nav-list__li">
-										<a href="#" class="header-nav-list__link">FAQ</a>
+										<a href="#reviews" class="header-nav-list__link">Отзывы</a>
 									</li>
 									<li class="header-nav-list__li">
-										<a href="#" class="header-nav-list__link">Отзывы</a>
+										<a href="#faq" class="header-nav-list__link">FAQ</a>
 									</li>
 									<li class="header-nav-list__li">
-										<a href="#" class="header-nav-list__link">Контакты</a>
+										<a href="#contacts" class="header-nav-list__link">Контакты</a>
 									</li>
 								</ul>
 
@@ -103,7 +103,7 @@
 
 		</section>
 
-		<section class="screen index-screen-2">
+		<section class="screen index-screen-2" id="about">
 
 			<div class="container">
 
@@ -118,7 +118,7 @@
 
 		</section>
 
-		<section class="screen screen_dark index-screen-3">
+		<section class="screen screen_dark index-screen-3" id="last-files">
 
 			<div class="container">
 
@@ -415,6 +415,7 @@
 		</section>
 
 		<section class="screen screen_dark index-screen-4">
+
 			<div class="container">
 
 				<h2 class="title-h2">Выберите свой автомобиль</h2>
@@ -424,7 +425,7 @@
 			</div>
 		</section>
 
-		<section class="screen screen_dark index-screen-5">
+		<section class="screen screen_dark index-screen-5" id="blog">
 			<div class="container">
 
 				<h2 class="title-h2">Блог</h2>
@@ -434,14 +435,14 @@
 					<article class="col-12 col-lg-6 col-xxl-5 index-article">
 
 						<div class="index-article__content">
-							<a href="#" class="index-article__img">
+							<a href="blog-item.html" class="index-article__img">
 								<img src="img/blog-1.jpg" alt="">
 							</a>
 
 							<div class="index-article__info">
 
 								<h2 class="index-article__title">
-									<a href="#" class="index-article__title-link">Название темы</a>
+									<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 								</h2>
 
 								<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
@@ -449,7 +450,7 @@
 								<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
 								<div class="index-article__btn-wrapper d-flex justify-content-start justify-content-sm-end">
-									<a href="#" class="btn btn_dark btn_no-upper">Подробнее</a>
+									<a href="blog-item.html" class="btn btn_dark btn_no-upper">Подробнее</a>
 								</div>
 
 							</div>
@@ -461,20 +462,22 @@
 					<article class="col-12 col-lg-6 col-xxl-5 index-article">
 
 						<div class="index-article__content">
-							<a href="#" class="index-article__img">
+							<a href="blog-item.html" class="index-article__img">
 								<img src="img/blog-2.jpg" alt="">
 							</a>
 
 							<div class="index-article__info">
 
-								<h2 class="index-article__title"><a href="#" class="index-article__title-link">Название темы</a></h2>
+								<h2 class="index-article__title">
+									<a href="blog-item.html" class="index-article__title-link">Название темы</a>
+								</h2>
 
 								<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
 
 								<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
 								<div class="index-article__btn-wrapper d-flex justify-content-start justify-content-sm-end">
-									<a href="#" class="btn btn_dark btn_no-upper">Подробнее</a>
+									<a href="blog-item.html" class="btn btn_dark btn_no-upper">Подробнее</a>
 								</div>
 
 							</div>
@@ -485,7 +488,9 @@
 
 					<div class="row justify-content-center col-12">
 
-						<a href="#" class="btn btn_transparent btn_no-upper col-12 col-sm-8 col-md-6 col-lg-4">Читать ещё</a>
+						<a href="blog.html" class="btn btn_transparent btn_no-upper col-12 col-sm-8 col-md-6 col-lg-4">
+							Читать ещё
+						</a>
 
 					</div>
 
@@ -517,9 +522,167 @@
 			</div>
 		</section>
 
+		<section class="index-screen-7">
+			<div class="container d-flex flex-wrap">
+
+				<div class="col-12 col-lg-6 screen screen_dark screen-reviews" id="reviews">
+
+					<h2 class="title-h2">Отзывы наших клиентов</h2>
+
+					<div class="slider-single">
+
+						<div class="index-review">
+							<div class="d-flex flex-column justify-content-between index-review__content">
+								<p class="index-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+
+								<div class="d-flex justify-content-end index-review__author">
+									Имя, владелец автосервиса
+								</div>
+							</div>
+						</div>
+
+						<div class="index-review">
+							<div class="d-flex flex-column justify-content-between index-review__content">
+								<p class="index-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+
+								<div class="d-flex justify-content-end index-review__author">
+									Имя, владелец автосервиса
+								</div>
+							</div>
+						</div>
+
+						<div class="index-review">
+							<div class="d-flex flex-column justify-content-between index-review__content">
+								<p class="index-review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+
+								<div class="d-flex justify-content-end index-review__author">
+									Имя, владелец автосервиса
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-12 col-lg-6 screen screen-faq" id="faq">
+
+					<h2 class="title-h2">Часто задаваемые вопросы</h2>
+
+					<dl class="faq-list">
+
+						<dt class="faq-list__title">Вопрос №1</dt>
+						<dd class="faq-list__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</dd>
+
+						<dt class="faq-list__title">Вопрос №2</dt>
+						<dd class="faq-list__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</dd>
+
+						<dt class="faq-list__title">Вопрос №3</dt>
+						<dd class="faq-list__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</dd>
+
+						<dt class="faq-list__title">Вопрос №4</dt>
+						<dd class="faq-list__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</dd>
+
+					</dl>
+
+				</div>
+
+			</div>
+
+		</section>
+
 	</main>
 
-	<footer class="footer">
+	<footer class="footer screen screen_dark" id="contacts">
+
+		<div class="container d-flex flex-wrap">
+
+			<div class="col-12 col-md-6 col-xl-4 footer-license">
+
+				<img src="img/license.jpg" alt="" class="footer-license__img">
+
+			</div>
+
+			<div class="col-12 col-md-6 col-xl-4 footer-schedule">
+
+				<div class="title-h2">График работы</div>
+
+				<div class="footer-schedule__time-zone">Time Zone: +3 GMT</div>
+
+				<table class="footer-schedule__table table">
+
+					<tr>
+						<td>Понедельник</td>
+						<td>10.00-23.00 GTM+ 3 </td>
+					</tr>
+
+					<tr>
+						<td>Вторник</td>
+						<td>10.00-23.00 GTM+ 3 </td>
+					</tr>
+
+					<tr>
+						<td>Среда</td>
+						<td>10.00-23.00 GTM+ 3 </td>
+					</tr>
+
+					<tr>
+						<td>Четверг</td>
+						<td>10.00-23.00 GTM+ 3 </td>
+					</tr>
+
+					<tr>
+						<td>Пятница</td>
+						<td>10.00-23.00 GTM+ 3 </td>
+					</tr>
+
+					<tr>
+						<td>Суббота</td>
+						<td>10.00-21.00 GTM+ 3 </td>
+					</tr>
+
+					<tr>
+						<td>Воскресенье</td>
+						<td>10.00-21.00 GTM+ 3 </td>
+					</tr>
+
+				</table>
+
+			</div>
+
+			<div class="col-12 col-md-6 col-xl-4 footer-contacts">
+
+				<div class="title-h2">Контактная информация</div>
+
+				<address class="footer-address">
+					<p class="footer-address__p">
+						Name: YAStuning OU (14016370)
+					</p>
+
+					<p class="footer-address__p">
+						Country: Estonia
+					</p>
+
+					<p class="footer-address__p">
+						City: Tallinn
+					</p>
+
+					<p class="footer-address__p">
+						Post Code: 11415
+					</p>
+
+					<p class="footer-address__p">
+						Address: Pae 21
+					</p>
+
+					<p class="footer-address__p">
+						Email: <a href="mailto:info@yastuning.com" class="link link_accent">info@yastuning.com</a>
+					</p>
+				</address>
+
+			</div>
+
+		</div>
 
 	</footer>
 

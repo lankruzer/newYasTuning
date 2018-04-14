@@ -1,0 +1,80 @@
+.faq-list
+	margin: 0 auto
+	padding: 0
+	width: 80%
+	list-style: none
+	&__title
+		position: relative
+		display: block
+		padding: 28px 80px 28px 25px
+		box-sizing: border-box
+		font-size: 34px
+		line-height: 34px
+		font-weight: 700
+		color: $font-light
+		background-color: $dark-blue
+		cursor: pointer
+		transition: .25s
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			right: 40px
+			width: 20px
+			height: 20px
+			box-sizing: border-box
+			border:
+				top: 4px solid $font-light
+				left: 4px solid $font-light
+			transform: translate(-50%, -50%) rotate(-135deg)
+			transform-origin: center
+			transition: .25s
+		&_active
+			color: $accent
+			&::before
+				border-color: $accent
+				transform: translate(-50%, -50%) rotate(45deg)
+		&:hover
+			color: $accent
+			&::before
+				border-color: $accent
+	&__content
+		display: none
+		padding: 15px
+		box-sizing: border-box
+		font-size: 18px
+		line-height: 28px
+		font-weight: 700
+		color: $font-dark
+		background-color: $font-light
+
++media-breakpoint-down(xxl)
+	.faq-list
+		&__title
+			font-size: 30px
+			line-height: 30px
+
++media-breakpoint-down(xl)
+	.faq-list
+		&__title
+			padding: 15px 70px 15px 25px
+			font-size: 24px
+			line-height: 24px
+		&__content
+			padding: 15px
+			line-height: 24px
+
++media-breakpoint-down(lg)
+	.faq-list
+		&__title
+			padding: 15px 70px 15px 25px
+			font-size: 18px
+			line-height: 18px
+			&::before
+				width: 10px
+				height: 10px
+				border-width: 3px
+		&__content
+			padding: 10px
+			font-size: 16px
+			line-height: 21px

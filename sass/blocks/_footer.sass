@@ -1,0 +1,93 @@
+.footer
+	background-image: url("../img/footer-bg.jpg")
+
+	.title-h2
+		font-size: 32px
+
+	&-license
+		padding-top: 142px
+		&__img
+			max-width: 100%
+			width: 100%
+			height: auto
+
+	&-schedule
+		.title-h2
+			margin-bottom: 26px
+
+		&__time-zone
+			margin: 0 0 10px
+			text-align: center
+			font-size: 26px
+			line-height: 30px
+			color: $font-light
+
+	&-address
+		margin: 0 auto
+		width: 80%
+
++media-breakpoint-down(xxl)
+	.footer
+		font-size: 22px
+		line-height: 26px
+
+		.title-h2
+			font-size: 24px
+			line-height: 28px
+
+		&-license
+			padding-top: 112px
+
+		&-schedule
+			&__time-zone
+				font-size: 22px
+				line-height: 26px
+
++media-breakpoint-down(xl)
+	.footer
+		font-size: 20px
+		line-height: 24px
+
+		.title-h2
+			font-size: 22px
+			line-height: 26px
+
+		&-address
+			width: 90%
+
++media-breakpoint-down(lg)
+	.footer
+		&-license
+			order: 10
+
++media-breakpoint-down(md)
+	.footer
+		font-size: 20px
+		line-height: 24px
+
+		.title-h2
+			margin-bottom: 20px
+			font-size: 22px
+			line-height: 26px
+
+		&-schedule
+			margin-bottom: 40px
+
+		&-address
+			width: 100%
+
+		&-contacts
+			margin-bottom: 40px
+
+		&-license
+			padding-top: 0
+
++media-breakpoint-down(md)
+	.footer
+		font-size: 16px
+		line-height: 20px
+
+		&-schedule
+			&__time-zone
+				font-size: 16px
+				line-height: 20px
