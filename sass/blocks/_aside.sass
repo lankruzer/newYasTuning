@@ -1,0 +1,212 @@
+.aside
+	&-block
+		padding: 30px 20px 40px
+		box-sizing: border-box
+		background-color: $font-light
+		&:not(:last-of-type)
+			margin-bottom: 60px
+		&__title
+			display: block
+			margin-bottom: 35px
+			padding-bottom: 20px
+			font-size: 25px
+			line-height: 25px
+			text-transform: uppercase
+			color: $font-dark
+			border-bottom: 2px solid $accent
+
+.toggle-aside
+	display: none
+
+.latest-project
+	color: $font-dark
+
+	&:not(:last-of-type)
+		margin-bottom: 30px
+		padding-bottom: 15px
+		border-bottom: 1px solid $accent
+
+	&__img
+		float: left
+		margin-right: 10px
+		margin-bottom: 10px
+		width: 50%
+		img
+			display: block
+			max-width: 100%
+			width: 100%
+			height: auto
+
+	&__title
+		margin: 0 0 10px
+		font-size: 20px
+		line-height: 20px
+	&__link
+		font-size: 20px
+		line-height: 20px
+		font-weight: 700
+		color: $font-dark
+		transition: .25s
+		&:hover
+			color: $accent
+	&__text
+		margin: 0 0 10px
+		font-size: 20px
+		line-height: 20px
+		color: $font-dark
+	&__time
+		font-size: 20px
+		line-height: 20px
+
+.categories-list
+	margin: 0
+	padding: 0
+	list-style: none
+	&__li:not(:last-of-type)
+		margin-bottom: 10px
+	&__link
+		display: block
+		width: 100%
+		font-size: 20px
+		line-height: 20px
+		font-weight: 700
+		color: $font-dark
+		transition: .25s
+		&:hover
+			color: $accent
+			text-decoration: none
+	&__count
+		float: right
+
+.aside-tags
+	margin: 0
+	padding: 0
+	&__li
+		display: inline-block
+		margin-right: 5px
+	&__link
+		font-size: 20px
+		line-height: 20px
+		font-weight: 700
+		color: $font-dark
+		transition: .25s
+		&:hover
+			color: $accent
+
++media-breakpoint-down(xl)
+	.aside
+		&-block
+			&__title
+				font-size: 22px
+				line-height: 22px
+
+	.latest-project
+		&:not(:last-of-type)
+			padding-bottom: 5px
+			margin-bottom: 20px
+		&__img
+			width: 45%
+		&__title
+			font-size: 18px
+			line-height: 18px
+		&__link
+			font-size: 18px
+			line-height: 18px
+		&__text
+			font-size: 16px
+			line-height: 16px
+		&__time
+			margin-bottom: 0
+			font-size: 18px
+			line-height: 18px
+
+	.categories-list
+		&__link
+			font-size: 18px
+			line-height: 18px
+
+	.aside-tags
+		&__link
+			font-size: 18px
+			line-height: 18px
+
++media-breakpoint-down(lg)
+	.aside
+		&-block
+			padding: 20px 10px 30px
+
+			&__title
+				margin-bottom: 25px
+				padding-bottom: 15px
+				font-size: 20px
+				line-height: 20px
+
+	.latest-project
+		&:not(:last-of-type)
+			padding-bottom: 5px
+			margin-bottom: 15px
+		&__img
+			width: 45%
+		&__title
+			font-size: 16px
+			line-height: 16px
+		&__link
+			font-size: 16px
+			line-height: 16px
+		&__text
+			font-size: 14px
+			line-height: 14px
+		&__time
+			margin-bottom: 0
+			font-size: 16px
+			line-height: 16px
+
+	.categories-list
+		&__link
+			font-size: 16px
+			line-height: 16px
+
+	.aside-tags
+		&__link
+			font-size: 16px
+			line-height: 16px
+
+
++media-breakpoint-down(md)
+	.aside
+		position: fixed
+		top: 0
+		z-index: 10
+		right: -290px
+		padding: 0
+		width: 280px
+		min-width: 280px
+		max-width: 280px
+		height: 100vh
+		background-color: $font-light
+		border-left: 2px solid $accent
+		overflow: auto
+		transition: .25s
+		&_active
+			right: 0
+
+		&-block:not(:last-of-type)
+			margin-bottom: 0
+
+	.toggle-aside
+		display: block
+		position: fixed
+		top: 50%
+		right: -2px
+		min-width: 100px
+		transform: translate(-25%, -50%) rotate(-90deg)
+		transform-origin: right
+		&_active
+			right: 275px
+			.lines
+				transform: rotate(90deg)
+				background-color: transparent
+				box-shadow: 0 -6px 0 0 transparent, 0 6px 0 0 transparent
+				&::before,
+				&::after
+					background-color: #fff

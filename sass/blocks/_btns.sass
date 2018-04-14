@@ -11,12 +11,14 @@
 	text-transform: uppercase
 	color: $font-light
 	background-color: $accent
+	border: 2px solid $accent
 	cursor: pointer
 	transition: .25s
 	&:hover
 		color: $font-light
 		text-decoration: none
 		background-color: $accent-dark
+		border-color: $accent-dark
 
 	&.btn_transparent
 		background-color: transparent
@@ -43,9 +45,11 @@
 		letter-spacing: 1px
 		color: $light-gray
 		background-color: $dark
+		border-color: $dark
 		&:hover
 			color: #fff
 			background-color: $accent
+			border-color: $accent
 
 +media-breakpoint-down(xl)
 	.btn

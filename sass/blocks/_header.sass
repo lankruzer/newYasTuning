@@ -1,6 +1,19 @@
 .header
 	margin-bottom: 70px
 
+	&.header_inner
+		margin-bottom: 0
+		padding:
+			top: 40px
+			bottom: 20px
+		background-color: #13191d
+
+		.header-nav
+			margin-bottom: 10px
+
+		.btn
+			margin-left: 40px
+
 	&-logo
 		max-width: 175px
 		text-decoration: none
@@ -78,15 +91,12 @@
 +media-breakpoint-down(xxl)
 	.header
 
-		&-language__link
-			font-size: 20px
-
-		&-nav-list__link
-			font-size: 20px
-			line-height: 24px
-
-+media-breakpoint-down(xl)
-	.header
+		&.header_inner
+			.btn
+				margin-left: 30px
+				min-height: 50px
+				font-size: 22px
+				line-height: 46px
 
 		&-logo
 			max-width: 125px
@@ -105,6 +115,20 @@
 	.header
 		margin-bottom: 60px
 
+		&.header_inner
+
+			padding-top: 25px
+
+			.header-nav
+				margin-bottom: 0
+
+			.btn
+				margin-left: 20px
+				min-height: 34px
+				min-width: 200px
+				font-size: 16px
+				line-height: 30px
+
 		&-logo
 			max-width: 100px
 
@@ -119,9 +143,26 @@
 				font-size: 16px
 				line-height: 20px
 
++media-breakpoint-down(lg)
+	.header.header_inner
+		.btn
+			margin-left: 20px
+			min-height: 30px
+			min-width: 150px
+			font-size: 14px
+			line-height: 26px
+
 +media-breakpoint-down(md)
 	.header
 		margin-bottom: 50px
+
+		&.header_inner
+			.btn
+				margin-left: 20px
+				min-height: 40px
+				min-width: 120px
+				font-size: 14px
+				line-height: 36px
 
 		&-logo
 			max-width: 80px
@@ -145,6 +186,16 @@
 	.header
 		margin-bottom: 40px
 
+		&.header_inner
+			padding-bottom: 15px
+			.btn
+				margin-bottom: 10px
+
+			.header-logo
+				margin-bottom: 10px
+				max-width: 150px
+
+
 		&-logo
 			max-width: 90px
 			width: 100%
@@ -159,7 +210,7 @@
 
 		&-nav-list
 			position: fixed
-			top: -1000px
+			top: -100vh
 			left: 0
 			z-index: 10
 			flex-direction: column

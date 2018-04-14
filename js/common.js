@@ -57,6 +57,8 @@ $(function() {
 		$('.faq-list__title:first-of-type').click();
 	}
 	// /faq-list
+
+	//  flowing scroll
 	$('a[href^="#"]').click( function(event) {
 		event.preventDefault();
 		var target = this.hash,
@@ -75,20 +77,16 @@ $(function() {
 			});
 		}
 	});
-	//  flowing scroll
-
-	$("a").click(function() {
-
-		$("html, body").animate({
-			scrollTop: $($(this).attr("href")).offset().top + "px"
-		}, {
-			duration: 500,
-			easing: "swing"
-		});
-		return false;
-	});
-
 	//  /flowing scroll
+
+	// toggle aside
+	if (document.querySelector('.toggle-aside')) {
+		$('.toggle-aside').click(function() {
+			$(this).toggleClass('toggle-aside_active');
+			$('.aside').toggleClass('aside_active');
+		})
+	};
+	// /toggle aside
 
 
 });

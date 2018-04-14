@@ -33,3 +33,53 @@
 		&:hover
 			color: $accent
 			text-decoration: underline
+
+.pagination
+	list-style: none
+	&__li
+		margin: 0 5px
+		font-weight: 700
+		&_active
+			.pagination__link
+				text-decoration: none
+				color: #fff
+				background-color: $accent
+				&:hover
+					background-color: $accent-dark
+	&__link
+		display: block
+		min-width: 54px
+		text-align: center
+		font-size: 25px
+		line-height: 54px
+		font-weight: 400
+		color: $font-dark
+		background-color: $font-light
+		transition: .25s
+		&:hover
+			text-decoration: none
+			color: #fff
+			background-color: $accent
+
++media-breakpoint-down(xl)
+	.pagination__link
+		min-width: 50px
+		line-height: 50px
+
++media-breakpoint-down(lg)
+	.pagination__link
+		min-width: 45px
+		font-size: 22px
+		line-height: 45px
+
++media-breakpoint-down(md)
+	.pagination__link
+		min-width: 40px
+		font-size: 20px
+		line-height: 40px
+
++media-breakpoint-down(sm)
+	.pagination__link
+		min-width: 35px
+		font-size: 18px
+		line-height: 35px
