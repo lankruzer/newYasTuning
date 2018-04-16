@@ -7,6 +7,13 @@ $(function() {
 			$(this).toggleClass('toggle-mobile-menu_active');
 			$('.header-nav-list').toggleClass('header-nav-list_active');
 		});
+
+		$('.header-nav-list__link').click(function() {
+			if ($(this).parent().parent().hasClass('header-nav-list_active')) {
+				$('.toggle-mobile-menu').click();
+			}
+		})
+
 	}
 	// /mobile menu
 
