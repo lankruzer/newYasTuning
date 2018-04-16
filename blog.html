@@ -105,7 +105,7 @@
 										<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 									</h2>
 
-									<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
+									<time class="index-article__time" datetime="2018-01-25">25.01.2018</time>
 
 									<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
@@ -132,7 +132,7 @@
 										<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 									</h2>
 
-									<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
+									<time class="index-article__time" datetime="2018-01-25">25.01.2018</time>
 
 									<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
@@ -159,7 +159,7 @@
 										<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 									</h2>
 
-									<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
+									<time class="index-article__time" datetime="2018-01-25">25.01.2018</time>
 
 									<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
@@ -186,7 +186,7 @@
 										<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 									</h2>
 
-									<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
+									<time class="index-article__time" datetime="2018-01-25">25.01.2018</time>
 
 									<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
@@ -213,7 +213,7 @@
 										<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 									</h2>
 
-									<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
+									<time class="index-article__time" datetime="2018-01-25">25.01.2018</time>
 
 									<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
@@ -240,7 +240,7 @@
 										<a href="blog-item.html" class="index-article__title-link">Название темы</a>
 									</h2>
 
-									<time class="index-article__time" datatype="2018-01-25">25.01.2018</time>
+									<time class="index-article__time" datetime="2018-01-25">25.01.2018</time>
 
 									<p class="index-article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor iusto molestiae numquam omnis porro repudiandae soluta ut voluptatum. Adipisci earum modi nisi quae quis sunt temporibus unde voluptatum. Voluptatum.</p>
 
@@ -301,7 +301,7 @@
 
 							</div>
 
-							<time class="latest-project__time" datatype="2018-01-12">12.01.2018</time>
+							<time class="latest-project__time" datetime="2018-01-12">12.01.2018</time>
 
 						</article>
 
@@ -321,7 +321,7 @@
 
 							</div>
 
-							<time class="latest-project__time" datatype="2018-01-12">12.01.2018</time>
+							<time class="latest-project__time" datetime="2018-01-12">12.01.2018</time>
 
 						</article>
 
@@ -341,7 +341,7 @@
 
 							</div>
 
-							<time class="latest-project__time" datatype="2018-01-12">12.01.2018</time>
+							<time class="latest-project__time" datetime="2018-01-12">12.01.2018</time>
 
 						</article>
 
@@ -550,7 +550,7 @@
 				<button class="btn btn__fill popup-form__button" type="submit">Recovery</button>
 			</form>
 
-			<div class="popup-form popup-form__registr" action="#" method="post">
+			<div class="popup-form popup-form__registr">
 				<button class="popup-form__close" type="button">Close</button>
 				<div class="popup-form__title popup-form__title_caps">Registr?</div>
 				<div class="tabs">
@@ -574,6 +574,7 @@
 									<label class="popup-form__label">
 										<span class="popup-form__label-name">Country<span class="popup-form__required-input">*</span></span>
 										<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+											<option value="" class="hide">&nbsp;</option> <!-- Нужно для правильной валидации, если удалить, то выкинет ошибку -->
 											<option value="1">country 1</option>
 											<option value="2">country 2</option>
 											<option value="3">country 3</option>
@@ -670,6 +671,7 @@
 									<label class="popup-form__label">
 										<span class="popup-form__label-name">Vat<span class="popup-form__required-input">*</span></span>
 										<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+											<option value="" class="hide">&nbsp;</option> <!-- Нужно для правильной валидации, если удалить, то выкинет ошибку -->
 											<option value="1">vat 1</option>
 											<option value="2">vat 2</option>
 											<option value="3">vat 3</option>
@@ -694,6 +696,7 @@
 									<label class="popup-form__label">
 										<span class="popup-form__label-name">Country<span class="popup-form__required-input">*</span></span>
 										<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+											<option value="" class="hide">&nbsp;</option> <!-- Нужно для правильной валидации, если удалить, то выкинет ошибку -->
 											<option value="1">country 1</option>
 											<option value="2">country 2</option>
 											<option value="3">country 3</option>

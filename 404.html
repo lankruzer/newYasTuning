@@ -224,7 +224,7 @@
 			<button class="btn btn__fill popup-form__button" type="submit">Recovery</button>
 		</form>
 
-		<div class="popup-form popup-form__registr" action="#" method="post">
+		<div class="popup-form popup-form__registr">
 			<button class="popup-form__close" type="button">Close</button>
 			<div class="popup-form__title popup-form__title_caps">Registr?</div>
 			<div class="tabs">
@@ -248,6 +248,7 @@
 								<label class="popup-form__label">
 									<span class="popup-form__label-name">Country<span class="popup-form__required-input">*</span></span>
 									<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+										<option value="" class="hide">&nbsp;</option> <!-- Нужно для правильной валидации, если удалить, то выкинет ошибку -->
 										<option value="1">country 1</option>
 										<option value="2">country 2</option>
 										<option value="3">country 3</option>
@@ -344,6 +345,7 @@
 								<label class="popup-form__label">
 									<span class="popup-form__label-name">Vat<span class="popup-form__required-input">*</span></span>
 									<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+										<option value="" class="hide">&nbsp;</option> <!-- Нужно для правильной валидации, если удалить, то выкинет ошибку -->
 										<option value="1">vat 1</option>
 										<option value="2">vat 2</option>
 										<option value="3">vat 3</option>
@@ -368,6 +370,7 @@
 								<label class="popup-form__label">
 									<span class="popup-form__label-name">Country<span class="popup-form__required-input">*</span></span>
 									<select class="popup-form__input popup-form__input_margin-b" name="country" required>
+										<option value="" class="hide">&nbsp;</option> <!-- Нужно для правильной валидации, если удалить, то выкинет ошибку -->
 										<option value="1">country 1</option>
 										<option value="2">country 2</option>
 										<option value="3">country 3</option>
