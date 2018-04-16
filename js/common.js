@@ -92,7 +92,7 @@ $(function() {
 			$(this).toggleClass('toggle-aside_active');
 			$('.aside').toggleClass('aside_active');
 		})
-	};
+	}
 	// /toggle aside
 
 

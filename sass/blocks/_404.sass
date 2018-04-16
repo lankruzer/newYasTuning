@@ -1,0 +1,44 @@
+.screen-404
+	min-height: 75vh
+	color: $font-light
+	text-align: center
+	background-image: url("../img/404-bg.jpg")
+	&-title
+		margin: 0 0 75px
+		font-size: 160px
+		line-height: normal
+		font-weight: 400
+		&__span
+			display: block
+			font-size: 50px
+			line-height: 60px
+
+	.btn
+		padding-left: 75px
+		padding-right: 75px
+
++media-breakpoint-down(xl)
+	.screen-404
+		&-title
+			margin:  0 0 40px
+			font-size: 100px
+			&__span
+				font-size: 40px
+				line-height: 50px
+
+		.btn
+			padding-left: 50px
+			padding-right: 50px
+
++media-breakpoint-down(lg)
+	.screen-404
+		&-title
+			margin:  0 0 30px
+			font-size: 80px
+			&__span
+				font-size: 30px
+				line-height: 40px
+
+		.btn
+			padding-left: 25px
+			padding-right: 25px
