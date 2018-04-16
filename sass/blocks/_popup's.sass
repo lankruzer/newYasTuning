@@ -1,0 +1,320 @@
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	z-index: -1
+	width: 100%
+	height: 100vh
+	overflow: auto
+	background-color: rgba(0, 0, 0, 0.6)
+	opacity: 0
+	transition: .25s
+	&_active
+		opacity: 1
+		z-index: 10
+	&__content
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 50px 0
+		width: 100%
+		min-height: 100vh
+		box-sizing: border-box
+
+.popup-form
+	position: relative
+	display: none
+	flex-direction: column
+	padding: 22px 40px 40px
+	width: 444px
+	max-width: calc(100% - 30px)
+	box-sizing: border-box
+	background-color: $light
+	opacity: 0
+	transition: .25s
+	&_active
+		display: flex
+		opacity: 1
+	&__registr
+		width: 600px
+	&__close
+		position: absolute
+		top: 25px
+		right: 15px
+		width: 24px
+		height: 24px
+		font-size: 0
+		cursor: pointer
+		border: 0
+		background-color: transparent
+		outline: none
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			width: 20px
+			height: 2px
+			background-color: $font-dark
+			transition: .25s
+		&::before
+			top: 50%
+			left: 0
+			transform: rotate(45deg)
+		&::after
+			top: 50%
+			left: 0
+			transform: rotate(-45deg)
+		&:hover::before,
+		&:hover::after
+			background-color: $font-dark
+	&__title
+		margin-bottom: 35px
+		text-align: center
+		font-size: 24px
+		line-height: 30px
+		font-weight: 600
+		color: $font-dark
+		&_caps
+			text-transform: uppercase
+	&__label
+		display: block
+		margin-bottom: 20px
+		width: 100%
+		&_margin-b
+			margin-bottom: 20px!important
+		&-name
+			display: block
+			margin-bottom: 8px
+			font-size: 14px
+			line-height: 14px
+			font-weight: 600
+			text-transform: uppercase
+			color: $font-dark
+		&:last-of-type
+			margin-bottom: 0
+	&__check-label
+		display: block
+		width: 100%
+		cursor: pointer
+		&_margin-b
+			margin-bottom: 20px
+		&:hover .popup-form__check-name
+			color: $accent
+	&__check-span
+		position: relative
+		display: inline-block
+		margin-right: 10px
+		margin-top: 5px
+		width: 20px
+		height: 20px
+		box-sizing: border-box
+		vertical-align: top
+		border: 2px solid $accent
+		transition: .25s
+		&::before
+			content: ''
+			position: absolute
+			left: 4px
+			width: 8px
+			height: 11px
+			box-sizing: border-box
+			border-right: 3px solid $font-light
+			border-bottom: 3px solid $font-light
+			transition: .25s
+			opacity: 0
+			transform: rotate(45deg)
+	&__check-input
+		display: none
+		&:checked + .popup-form__check-span
+			background-color: $accent
+			&::before
+				opacity: 1
+	&__check-name
+		display: inline-block
+		vertical-align: top
+		width: 90%
+		font-size: 16px
+		line-height: 30px
+		font-weight: 600
+		color: $font-dark
+		transition: .25s
+	&__required-input
+		font-size: 16px
+		color: $accent
+		font-weight: 700
+	&__input
+		display: block
+		padding: 0 15px
+		width: 100%
+		min-height: 48px
+		box-sizing: border-box
+		font-size: 18px
+		font-weight: 600
+		color: $black
+		border: 2px solid #dddddd
+		background-color: #dddddd
+		outline: none
+		transition: .25s
+		&_margin-b
+			margin-bottom: 20px
+		&:hover
+			border-color: $accent
+		&:focus
+			border-color: $accent
+			background-color: $font-light
+	&__link-forgot
+		display: block
+		font-size: 14px
+		font-weight: 600
+		line-height: 30px
+		color: $accent
+		text-decoration: none
+		transition: .25s
+		&:hover
+			text-decoration: underline
+	&__button
+		display: block
+		margin: 30px 0 0
+		width: 100%
+		min-width: auto
+		font-size: 18px
+		line-height: 48px
+		font-weight: 600
+	&__fieldset
+		padding: 0
+		margin: 0
+		border: 0
+	&__fieldset:not(:last-of-type)
+		margin-bottom: 40px
+	&__legend
+		margin: 0 0 20px
+		font-size: 24px
+		line-height: 30px
+		font-weight: 600
+		color: $font-dark
+	&__add-text
+		display: block
+		margin: 0 0 15px !important
+		font-size: 14px
+		line-height: 30px
+		font-style: italic
+	&__required-info
+		margin: 10px 0 0
+		text-align: center
+		font-size: 16px
+		line-height: 30px
+		color: #ff0000
+	&__info-text
+		margin: 0
+		font-size: 16px
+		line-height: 30px
+		font-weight: 700
+		color: $font-dark
+
+select.popup-form__input option
+	min-height: 42px
+	font-size: 16px
+	line-height: 42px
+
+.tabs-nav
+	display: flex
+	margin: 0 0 40px
+	padding: 0
+	width: 100%
+	list-style: none
+	&__li
+		width: 50%
+		box-sizing: border-box
+		text-align: center
+		color: $font-dark
+		border-bottom: 4px solid $font-dark
+		transition: .25s
+		cursor: pointer
+		&_active
+			color: $accent
+			border-color: $accent
+		&:hover
+			border-color: $accent
+
+.tabs-content
+	margin: 0
+	padding: 0
+	list-style: none
+	color: $font-dark
+	&__tab
+		display: none
+		&_active
+			display: block
+
+.cols
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__40,
+	&__60,
+	&__100
+		margin-bottom: 20px
+	&__40
+		width: calc(40% - 15px)
+	&__60
+		width: calc(60% - 15px)
+	&__100
+		width: 100%
+	&_add-text
+		.popup-form__label,
+		.cols__40,
+		.cols__60,
+		.cols__100
+			margin-bottom: 0
+
+.help-block
+	margin: 0
+	padding: 0
+	font-size: 16px
+	.help-block-error
+		color: #ff0000
+
++media-breakpoint-down(sm)
+	.popup-form
+		padding: 15px 15px 20px
+		&__close
+			top: 0
+			right: 0
+		&__title
+			margin-bottom: 20px
+		&__legend
+			margin-bottom: 15px
+			font-size: 22px
+			line-height: 28px
+		&__input
+			padding: 0 10px
+			min-height: 40px
+			font-size: 16px
+		&__add-text
+			margin-top: 5px
+			line-height: 16px
+		&__check-span
+			margin-right: 5px
+		&__check-name
+			width: 86%
+
+		.tabs-nav
+			margin-bottom: 25px
+			&__li
+				padding-bottom: 5px
+				font-size: 20px
+				line-height: 20px
+
+		.cols
+			&__40
+				width: calc(45% - 5px)
+			&__60
+				width: calc(55% - 5px)
+
+		select.popup-form__input option
+			min-height: 34px
+			font-size: 16px
+			line-height: 34px
+
+
+
