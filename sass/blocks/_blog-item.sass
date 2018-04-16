@@ -1,0 +1,493 @@
+.blog-article
+	&__img
+		float: left
+		margin: 0 50px 50px 0
+		width: calc(50% - 50px)
+		img
+			display: block
+			width: 100%
+			height: auto
+
+	&__title
+		margin: 0 0 15px
+		font-size: 40px
+		line-height: 44px
+		text-transform: uppercase
+		font-weight: 400
+		letter-spacing: 1.6px
+		color: #a9aaaa
+
+	&__time
+		display: block
+		margin: 0 0 15px
+		font-size: 25px
+		letter-spacing: 1px
+		color: #a9aaaa
+
+	&-tags
+		margin: 0 0 15px
+		padding: 0
+		list-style: none
+		&__li
+			display: inline-block
+			margin:  0 5px 0 0
+		&__link
+			display: block
+			font-size: 25px
+			letter-spacing: 1px
+			color: #a9aaaa
+			transition: .25s
+			&:hover
+				color: $accent
+
+	&__text
+		margin: 0 0 15px
+		font-size: 25px
+		letter-spacing: 1px
+		line-height: normal
+		color: $font-light
+
+	&-cols
+		margin-bottom: 50px
+
+	.slider-item-list
+		margin-top: 0
+
+.blog-nav
+	color: $font-light
+	background-color: #30373e
+	&__title
+		margin-bottom: 60px
+		text-align: left
+		font-size: 25px
+		letter-spacing: 1px
+
+	.blog-nav__next
+		.blog-nav__title
+			text-align: right
+
+	&__link
+		color: $font-light
+		transition: .25s
+		text-decoration: none
+		&:hover
+			color: $accent
+			text-decoration: none
+
+	.arrow
+		position: relative
+		width: 60px
+		min-width: 60px
+		height: 60px
+		box-sizing: border-box
+		font-size: 0
+		background-color: transparent
+		border: 2px solid $light-gray
+		border-radius: 50%
+		outline: none
+		transition: .25s
+		cursor: pointer
+		&.arrow_prev
+			margin-right: 20px
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 15px
+				height: 15px
+				box-sizing: border-box
+				border: 2px solid $light-gray
+				border-right: 0
+				border-top: 0
+				transform: translate(-35%, -50%) rotate(45deg)
+				transition: .25s
+		&.arrow_next
+			margin-left: 20px
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 15px
+				height: 15px
+				box-sizing: border-box
+				border: 2px solid $light-gray
+				border-left: 0
+				border-bottom: 0
+				transform: translate(-65%, -50%) rotate(45deg)
+				transition: .25s
+
+		&:hover
+			background-color: $accent
+			border-color: $accent
+			&::before
+				border-color: #fff
+
+	&-preview
+		flex-basis: 100%
+		padding: 40px
+		box-sizing: border-box
+		background-color: $dark-blue
+
+		&__img
+			float: left
+			margin: 0 20px 20px 0
+			width: calc(50% - 20px)
+			img
+				display: block
+				width: 100%
+				height: auto
+
+		&__title
+			margin: 0 0 10px
+			font-size: 25px
+			letter-spacing: 1px
+			font-weight: 700
+
+		&__text
+			margin: 0 0 10px
+			font-size: 25px
+			letter-spacing: 1px
+
+		&__time
+			font-size: 25px
+			letter-spacing: 1px
+
+.blog-comments
+
+	&__title
+		margin-bottom: 50px
+		text-align: center
+		font-size: 33px
+		letter-spacing: 1.32px
+
+.comments-list
+	margin: 0
+	padding: 0
+	list-style: none
+
+	.comments-list
+		margin: 0 0 50px auto
+		width: 90%
+
+.blog-review
+	margin-bottom: 35px
+
+
+	&__img
+		img
+			width: 175px
+			height: auto
+			border-radius: 50%
+
+	&__time,
+	&__author,
+	&__text
+		display: block
+		margin-bottom: 25px
+		font-size: 25px
+		letter-spacing: 1px
+
+.blog-form
+	font-size: 20px
+	color: $font-light
+	background-image: url("../img/blog-form-bg.jpg")
+
+	&__title
+		margin: 0 0 30px 120px
+		font-size: 32px
+		letter-spacing: 1.32px
+		color: #fff
+
+.comment-form
+	div[class*='col-']:not(:nth-last-of-type(1)):not(:nth-last-of-type(2))
+		margin-bottom: 45px
+
+	&__block-btn
+		margin: 0 auto
+
++media-breakpoint-down(xxl)
+	.blog-article
+		&__title
+			font-size: 30px
+			line-height: 34px
+
+		&__time
+			font-size: 20px
+			line-height: 24px
+
+		&-tags
+			&__link
+				font-size: 20px
+				line-height: 24px
+
+		&__text
+			font-size: 20px
+			line-height: 24px
+
+		&-cols
+			margin-bottom: 30px
+
+		.slider-item-list
+			font-size: 20px
+			line-height: 24px
+			&__img
+				width: 15px
+
+	.blog-nav
+		&__title
+			margin-bottom: 40px
+		&-preview
+			padding: 30px
+
+	.blog-review
+		&__img
+			img
+				width: 150px
+		&__time,
+		&__author,
+		&__text
+			margin-bottom: 15px
+
++media-breakpoint-down(xl)
+	.blog-article
+		&__img
+			margin: 0 30px 30px 0
+			width: calc(50% - 30px)
+
+		&__title
+			font-size: 24px
+			line-height: 28px
+
+		&__time
+			font-size: 18px
+			line-height: 22px
+
+		&-tags__link
+			font-size: 18px
+			line-height: 22px
+
+		&__text
+			font-size: 18px
+			line-height: 22px
+
+		.slider-item-list
+			font-size: 18px
+			line-height: 22px
+
+	.blog-nav
+		&__title
+			margin-bottom: 30px
+			font-size: 22px
+			line-height: 22px
+		&-preview
+			padding: 20px
+			&__title
+				font-size: 22px
+				line-height: 26px
+			&__text,
+			&__time
+				font-size: 20px
+				line-height: 24px
+
+	.blog-comments__title
+		font-size: 28px
+
+	.blog-review
+		&__img
+			img
+				width: 125px
+		&__time,
+		&__author,
+		&__text
+			font-size: 20px
+
++media-breakpoint-down(lg)
+	.blog-article
+		&__img
+			margin: 0 15px 15px 0
+			width: calc(50% - 15px)
+
+		&__title
+			font-size: 22px
+			line-height: 26px
+
+		&__time
+			font-size: 16px
+			line-height: 20px
+
+		&-tags__link
+			font-size: 16px
+			line-height: 20px
+
+		&__text
+			font-size: 16px
+			line-height: 20px
+
+		.slider-item-list
+			font-size: 16px
+			line-height: 20px
+			&__img
+				width: 10px
+
+	.blog-nav
+		&__title
+			margin-bottom: 20px
+			font-size: 18px
+			line-height: 18px
+		&-preview
+			padding: 15px
+			&__title
+				font-size: 18px
+				line-height: 20px
+			&__text,
+			&__time
+				font-size: 16px
+				line-height: 18px
+
+		.arrow
+			min-width: 45px
+			height: 45px
+			&.arrow_prev
+				margin-right: 10px
+			&.arrow_next
+				margin-left: 10px
+
+
++media-breakpoint-down(md)
+	.blog-article
+
+		&__title
+			margin-bottom: 10px
+			font-size: 20px
+			line-height: 24px
+
+		&__time
+			margin-bottom: 5px
+			font-size: 16px
+			line-height: 16px
+
+		&-tags
+			margin-bottom: 5px
+
+			&__link
+				font-size: 16px
+				line-height: 16px
+
+		&__text
+			font-size: 16px
+			line-height: 20px
+
+		.slider-item-list
+			font-size: 16px
+			line-height: 20px
+			&__img
+				width: 10px
+
+	.blog-nav
+		&-preview
+			&__img
+				float: none
+				margin:  0 0 15px
+				width: 100%
+
+	.blog-comments__title
+		font-size: 24px
+
+	.blog-review
+		&__img
+			img
+				width: 90px
+		&__time,
+		&__author,
+		&__text
+			margin-bottom: 10px
+			font-size: 18px
+
+	.blog-form
+		font-size: 14px
+		&__title
+			margin: 0 0 20px 40px
+			font-size: 24px
+
+	.comment-form
+		div[class*='col-']:not(:nth-last-of-type(1)):not(:nth-last-of-type(2))
+			margin-bottom: 25px
+
++media-breakpoint-down(sm)
+	.blog-article
+		&__img
+			float: none
+			width: 100%
+
+		&__title
+			margin-bottom: 10px
+			font-size: 20px
+			line-height: 24px
+
+		&__time
+			margin-bottom: 5px
+			font-size: 16px
+			line-height: 16px
+
+		&-tags
+			margin-bottom: 5px
+
+			&__link
+				font-size: 16px
+				line-height: 16px
+
+		&__text
+			font-size: 16px
+			line-height: 20px
+
+		.slider-item-list
+			font-size: 16px
+			line-height: 20px
+			&__img
+				width: 10px
+
+	.blog-nav
+		&__prev
+			margin-bottom: 30px
+
+		.blog-nav__next
+			.blog-nav__title
+				text-align: left
+
+		&__title
+			margin-bottom: 15px
+
+		.arrow
+			display: none
+
+	.blog-comments__title
+		margin-bottom: 25px
+		font-size: 20px
+
+	.comments-list
+		.comments-list
+			width: 95%
+
+	.blog-review
+		margin-bottom: 25px
+		&__img
+			img
+				width: 40px
+		&__time,
+		&__author,
+		&__text
+			margin-bottom: 5px
+			font-size: 14px
+			line-height: 18px
+
+	.blog-form
+		font-size: 14px
+		&__title
+			margin: 0 0 15px 20px
+			font-size: 20px
+
+	.comment-form
+		div[class*='col-']
+			margin-bottom: 10px

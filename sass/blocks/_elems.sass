@@ -61,10 +61,50 @@
 			color: #fff
 			background-color: $accent
 
+.unmarked-list
+	margin: 0
+	padding: 0
+	list-style: none
+	column-count: 2
+	&_upper
+		text-transform: uppercase
+	&_2-col
+		column-count: 2
+	&__li
+		position: relative
+		margin-bottom: 20px
+		padding-left: 36px
+		font-size: 20px
+		color: $font-light
+		&::before
+			content: ''
+			position: absolute
+			top: 9px
+			left: 0
+			width: 15px
+			height: 15px
+			background-color: #5a6774
+			border-radius: 50%
+
++media-breakpoint-down(xxl)
+	.unmarked-list__li
+		padding-left: 30px
+		font-size: 18px
+		line-height: 22px
+		&::before
+			top: 6px
+			width: 12px
+			height: 12px
+
 +media-breakpoint-down(xl)
 	.pagination__link
 		min-width: 50px
 		line-height: 50px
+
+	.unmarked-list__li
+		margin-bottom: 15px
+		font-size: 16px
+		line-height: 20px
 
 +media-breakpoint-down(lg)
 	.pagination__link
@@ -72,14 +112,39 @@
 		font-size: 22px
 		line-height: 45px
 
+	.unmarked-list__li
+		margin-bottom: 10px
+		padding-left: 20px
+		font-size: 14px
+		line-height: 18px
+		&::before
+			top: 4px
+			width: 10px
+			height: 10px
+
+
 +media-breakpoint-down(md)
 	.pagination__link
 		min-width: 40px
 		font-size: 20px
 		line-height: 40px
 
+	.unmarked-list
+		margin-bottom: 20px
+		&__li
+			margin-bottom: 15px
+			padding-left: 18px
+			&::before
+				top: 3px
+				width: 10px
+				height: 10px
+
 +media-breakpoint-down(sm)
 	.pagination__link
 		min-width: 35px
 		font-size: 18px
 		line-height: 35px
+
++media-breakpoint-down(xs)
+	.unmarked-list_2-col
+		column-count: 1

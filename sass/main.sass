@@ -12,6 +12,8 @@
 body
 	min-width: 320px
 	position: relative
+	display: flex
+	flex-direction: column
 	font-size: 25px
 	line-height: 1.65
 	font-family: $default-font
@@ -24,6 +26,8 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+	main
+		flex-basis: 100%
 
 	&.hide-scroll
 		height: 100%
@@ -68,6 +72,7 @@ b, strong
 
 @import "blocks/main-blog"
 @import "blocks/aside"
+@import "blocks/blog-item"
 
 @import "blocks/footer"
 
